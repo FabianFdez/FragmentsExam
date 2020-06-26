@@ -18,9 +18,6 @@ public class ListFragmentos extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.lista_fragmento, container, false);
-        ListView list = (ListView)view.findViewById(R.id.lista);
-        ArrayAdapter arrayAdapter = ArrayAdapter.createFromResource(getActivity(), R.array.paises, android.R.layout.simple_list_item_2 );
-        list.setAdapter(arrayAdapter);
         return view;
     }
 }
